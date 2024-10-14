@@ -1,8 +1,7 @@
-public class Student extends User{
-public Student(String username,String password){
-    super(username, password);
-}
-
+public class Teacher extends User{
+    public Teacher(String username, String password){
+        super (username, password);
+    }
     @Override
     public boolean login(String username, String password) {
         return getUsername().equals(username)&&getPassword().equals(password);
@@ -10,11 +9,9 @@ public Student(String username,String password){
 
     @Override
     public void menu() {
-        System.out.println("student menu");
+        System.out.println("Teacher menu");
         System.out.println("1.view information");
-        System.out.println("2.give exam");
-        System.out.println("3.Logout");
+        System.out.println("2.Logout");
 
     }
-    
 }
